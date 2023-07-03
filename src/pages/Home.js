@@ -1,18 +1,13 @@
-import React, { useCallback } from 'react';
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
+import React from 'react';
 import '../styles/Home.css';
-import particlesOptions from "../particles.json";
 import 'animate.css';
 
 function App() {
-    const particlesInit = useCallback(main => {
-        loadFull(main);
-    }, [])
+    
 
     return (
         <div className="App">
-            <Particles options={particlesOptions} init={particlesInit} />
+            
             <div className='introduction animate__animated animate__zoomIn'>
                 Hi, I'm Arfa. <br />
                 I'm a Web Developer and<br />
