@@ -12,6 +12,7 @@ const Navbar = ({ brandName, navItems }) => {
   };
 
   return (
+    <div className="nav-root"> 
     <nav className={`navbar ${isMenuOpen ? "menu-open" : ""}`}>
       <div className="navbar-brand" onClick={toggleMenu}>
         <span>{brandName}</span>
@@ -34,6 +35,7 @@ const Navbar = ({ brandName, navItems }) => {
         <span className="hamburger-bar"></span>
       </button>
     </nav>
+    </div>
   );
 };
 
