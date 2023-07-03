@@ -1,43 +1,26 @@
 import React, { useCallback } from 'react';
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import logo from './logo.svg';
 import './App.css';
 import particlesOptions from "./particles.json";
+import Navbar from './components/Navbar';
 
 function App() {
+    const navItems = ["Home", "Experience & Education", "Portfolio"];
     const particlesInit = useCallback(main => {
         loadFull(main);
     }, [])
 
     return (
         <div className="App">
-            <Particles options={particlesOptions} init={particlesInit}/>
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <p>
-                    Edit <code>src/particles.json</code> to customize Particles, then save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-                <a
-                    className="App-link"
-                    href="https://particles.js.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    See Particles samples
-                </a>
-            </header>
+            <Particles options={particlesOptions} init={particlesInit} />
+            <Navbar brandName="Muhammad Arfa." navItems={navItems} activeNavItem={0} />
+            <div className='introduction'>
+                Hi, I'm Arfa. <br />
+                I'm a Web Developer and<br />
+                Graphic Designer with a strong focus <br />
+                on problem solving and innovation.
+            </div>
         </div>
     );
 }

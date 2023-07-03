@@ -1,6 +1,6 @@
 {
   "background": {
-    "color": "#282c34"
+    "color": "#ffffff"
   },
   "interactivity": {
     "events": {
@@ -26,10 +26,10 @@
   },
   "particles": {
     "color": {
-      "value": "#ffffff"
+      "value": "#1938D1"
     },
     "links": {
-      "color": "#ffffff",
+      "color": "#1938D1",
       "distance": 150,
       "enable": true,
       "opacity": 0.5,
@@ -45,7 +45,7 @@
         "default": "bounce"
       },
       "random": false,
-      "speed": 6,
+      "speed": 1,
       "straight": false
     },
     "number": {
