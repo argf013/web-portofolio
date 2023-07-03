@@ -1,23 +1,15 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import Swal from 'sweetalert2'
+import { Link, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
 
-const Navbar = ({ brandName, navItems, activeNavItem }) => {
+const Navbar = ({ brandName, navItems }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  const notActive = () => {
-    Swal.fire(
-      'Under Development',
-      'This feature is currently under development.',
-      'info'
-    );
-    
-  }
 
   return (
     <nav className={`navbar ${isMenuOpen ? "menu-open" : ""}`}>
@@ -28,10 +20,11 @@ const Navbar = ({ brandName, navItems, activeNavItem }) => {
         {navItems.map((item, index) => (
           <li
             key={index}
-            onClick={notActive}
-            className={`nav-item ${activeNavItem === index ? "nav-item-active" : ""}`}
+            className="nav-item"
           >
-            {item}
+            <Link className={`nav-item ${location.pathname === (item === "Home" ? "/" : `/${item.toLowerCase()}`) ? "nav-item-active" : ""}`} to={item === "Home" ? "/" : `/${item.toLowerCase()}`}>
+              {item}
+            </Link>
           </li>
         ))}
       </ul>
@@ -46,8 +39,7 @@ const Navbar = ({ brandName, navItems, activeNavItem }) => {
 
 Navbar.propTypes = {
   brandName: PropTypes.string.isRequired,
-  navItems: PropTypes.arrayOf(PropTypes.string).isRequired,
-  activeNavItem: PropTypes.number
+  navItems: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 export default Navbar;

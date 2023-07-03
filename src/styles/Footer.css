@@ -1,0 +1,92 @@
+.footer {
+    background-color: #1938D1;
+}
+
+
+.footer-header>h1 {
+    color: white;
+    font-size: 20px;
+    font-family: Lulo;
+    padding: 1em;
+    justify-content: center;
+    padding-top: 4em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin: auto;
+    width: 30em;
+    
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 1em;
+
+}
+
+.footer-social-media a {
+    color: white;
+    font-size: 1.5em;
+}
+
+.footer-contact-form form {
+    display: grid;
+    gap: 0.5em;
+    grid-template-rows: repeat(5, min-content) 1fr;
+    grid-template-columns: 100%;
+}
+
+.footer-contact-form .form-group {
+    display: grid;
+    gap: 0.5em;
+}
+
+.footer-contact-form input,
+.footer-contact-form textarea {
+    width: 100%;
+    padding: 1em;
+    background-color: #1855BF;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+}
+
+.footer-contact-form input::placeholder,
+.footer-contact-form textarea::placeholder {
+    color: rgb(210, 210, 210);
+    font-family: Avenir Light;
+}
+
+.footer-contact-form button {
+    background-color: white;
+    position: relative;
+    left: 27px;
+    color: blue;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    justify-self: end;
+    width: 120px;
+}
+
+.footer-bottom {
+    background-color: #23324F;
+    color: #6C9491;
+    text-align: center;
+    padding: 1em;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+
+}
