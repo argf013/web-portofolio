@@ -5,16 +5,19 @@
 @font-face {
     font-family: 'Avenir Light';
     src: url('assets/fonts/Avenir-Light.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Lulo';
     src: url('assets/fonts/Lulo.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Avenir Heavy';
     src: url('assets/fonts/Avenir-Heavy.ttf') format('truetype');
+    font-display: swap;
 }
 
 .introduction {
@@ -26,7 +29,7 @@
     font-size: 53px;
     font-family: Avenir Heavy;
     white-space: pre-line;
-    color: #1938D1;
+    color: #ffffff;
 }
 
 #tsparticles {
@@ -38,18 +41,6 @@
     left: 0;
     top: 0;
     z-index: -1;
-}
-
-.introduction {
-    min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 53px;
-    font-family: Avenir Heavy;
-    white-space: pre-line;
-    color: #1938D1;
 }
 
 @media (max-width: 1024px) {

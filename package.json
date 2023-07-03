@@ -1,12 +1,14 @@
 {
-  "name": "your_app",
+  "name": "portofolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "animate.css": "^4.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-particles": "^2.10.1",
     "react-scripts": "5.0.1",
+    "sweetalert2": "^11.7.12",
     "tslib": "^2.6.0",
     "tsparticles": "^2.10.1",
     "tsparticles-engine": "^2.10.1"
