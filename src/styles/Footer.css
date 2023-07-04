@@ -29,7 +29,15 @@
 .footer-social-media {
     display: flex;
     gap: 1em;
+}
 
+.footer-social-media img {
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-social-media img:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
 }
 
 .footer-social-media a {
@@ -49,12 +57,22 @@
     gap: 0.5em;
 }
 
+input:required {
+    box-shadow: none;
+  }
+  
+  input:invalid {
+    box-shadow: 0 0 5px red;
+  }
+  
+
 .footer-contact-form input,
 .footer-contact-form textarea {
     width: 100%;
     padding: 1em;
     background-color: #1855BF;
     border: none;
+    color: white;
     outline: none;
     box-shadow: none;
     resize: none;
@@ -70,12 +88,18 @@
     background-color: white;
     position: relative;
     left: 27px;
+    font-family: Avenir Heavy;
     color: blue;
     padding: 0.5em 1em;
     border: none;
     cursor: pointer;
     justify-self: end;
     width: 120px;
+}
+
+.footer-contact-form button:hover {
+    background-color: #23324F;
+    color: white;
 }
 
 .footer-bottom {

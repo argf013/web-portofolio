@@ -14,7 +14,7 @@ const Layout = () => {
         <>
             <Navbar
                 brandName="Muhamad Arfa."
-                navItems={["Home", "Experince & Education", "Portfolio"]}
+                navItems={["Home", "Experience", "Portfolio"]}
             />
             <Particles options={particlesOptions} init={particlesInit} />
 

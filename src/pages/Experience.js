@@ -1,11 +1,13 @@
 import React from 'react'
+import cv from '../assets/images/CV.png'
 
 import '../styles/Experience.css'
 const Experience = () => {
     return (
-        <div className='experience'>
-           
-            <h1>Experience</h1>
+        <div className='experience animate__animated animate__slideInLeft'>
+            <div className='resume'>
+                <img src={cv} className='cv-image' alt='cv-muhamad-arfa'/>
+            </div>
         </div>
     )
 }
