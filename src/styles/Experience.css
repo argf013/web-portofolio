@@ -1,4 +1,4 @@
-.experience > h1 {
+.experience>h1 {
     font-size: 2.5rem;
     font-weight: 700;
     font-family: Avenir Heavy;
@@ -10,16 +10,16 @@
 .experience {
     min-height: 90vh;
     overflow: auto;
-    animation-duration: 1s; 
+    animation-duration: 1s;
 }
 
 ::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .cv-image {
-    margin-top: 3.5em!important;
-    margin-bottom: 3.5em!important;
+    margin-top: 3.5em !important;
+    margin-bottom: 3.5em !important;
     width: 50em;
     border-radius: 1em;
     margin: auto;
@@ -27,10 +27,20 @@
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease-in-out;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.688); /* Menambahkan shadowbox */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.688);
 }
 
 .cv-image:hover {
     transform: scale(1.08);
     transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+    .experience {
+        min-height: 0;
+    }
+
+    .cv-image {
+        width: 22em;
+    }
 }

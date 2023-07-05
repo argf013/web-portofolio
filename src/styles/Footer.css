@@ -1,5 +1,7 @@
 .footer {
     background-color: #1938D1;
+    position: relative;
+        clear: both;
 }
 
 
@@ -114,3 +116,45 @@ input:required {
     text-decoration: none;
 
 }
+
+/* CSS sebelumnya */
+
+/* Tambahkan media query untuk perangkat mobile */
+@media (max-width: 480px) {
+    .footer {
+        position: relative;
+        clear: both;
+      }
+    
+
+    .footer-social-media {
+        justify-content: center;
+    }
+
+    
+    
+    .footer-header>h1 {
+      /* Ubah properti atau tambahkan properti lain untuk menyesuaikan tampilan di perangkat mobile */
+      font-size: 18px;
+      padding-top: 2em;
+      /* Contoh properti lain untuk menurunkan tampilan */
+      text-align: center;
+    }
+    
+    .footer-content {
+        display: block;
+        padding: 1em;
+        margin: auto;
+        width: auto;
+      }
+
+      .footer-contact-form {
+        margin-top: 5em;
+        margin-left: 0.4em;
+        width: 20em;
+    }
+      
+    
+    /* Tambahkan perubahan lainnya sesuai kebutuhan */
+  }
+  
